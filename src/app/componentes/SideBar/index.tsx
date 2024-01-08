@@ -1,10 +1,12 @@
-import { Search } from 'lucide-react'
+import { Cog, LifeBuoy, Search } from 'lucide-react'
 import MainNavigation from './MainNavigation'
+import NavItem from './MainNavigation/navItem'
 import Logo from './logo'
+import UsedSpaceWidget from './usedSpaceWidget'
 
 export default function SideBar() {
   return (
-    <aside className="space-y-6 border-r border-zinc-300  px-5 py-8 pb-12">
+    <aside className="flex flex-col gap-6 border-r border-zinc-300  px-5 py-8 pb-12">
       <Logo />
 
       <div className="mx-1 flex w-full items-center gap-2 rounded-lg border border-zinc-300 px-3 py-2 shadow-sm ">
@@ -16,6 +18,15 @@ export default function SideBar() {
       </div>
 
       <MainNavigation />
+
+      <div className="mt-auto flex flex-col gap-6">
+        <nav className="space-y-0.5">
+          <NavItem title="Support" icon={LifeBuoy} />
+          <NavItem title="Settings" icon={Cog} />
+        </nav>
+
+        <UsedSpaceWidget />
+      </div>
     </aside>
   )
 }
