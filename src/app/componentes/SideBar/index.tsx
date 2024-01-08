@@ -2,6 +2,7 @@ import { Cog, LifeBuoy, Search } from 'lucide-react'
 import MainNavigation from './MainNavigation'
 import NavItem from './MainNavigation/navItem'
 import Logo from './logo'
+import Profile from './profile'
 import UsedSpaceWidget from './usedSpaceWidget'
 
 export default function SideBar() {
@@ -26,6 +27,9 @@ export default function SideBar() {
         </nav>
 
         <UsedSpaceWidget />
+
+        <div className="h-px bg-zinc-200"></div>
+        <Profile />
       </div>
     </aside>
   )
