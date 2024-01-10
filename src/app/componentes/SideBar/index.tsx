@@ -1,5 +1,5 @@
 import { Cog, LifeBuoy, Search } from 'lucide-react'
-import * as Input from '../input'
+import * as Input from '../Form/input'
 import MainNavigation from './MainNavigation'
 import NavItem from './MainNavigation/navItem'
 import Logo from './logo'
