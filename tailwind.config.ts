@@ -12,6 +12,9 @@ const config: Config = {
       borderWidth: {
         6: '6px',
       },
+      minHeight: {
+        formTextArea: '120px',
+      },
       colors: {
         violet: {
           25: '#fcfaff',
