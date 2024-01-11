@@ -53,7 +53,6 @@ export default function Home() {
               <Input.Root>
                 <Input.Control defaultValue="Teixeira" />
               </Input.Root>
-              FOrmF
             </div>
           </div>
 

@@ -16,7 +16,7 @@ export default function FormSelect({
 }: SelectProps) {
   return (
     <Select.Root {...props}>
-      <Select.Trigger className="border-zin-300 flex h-11 w-full items-center justify-between gap-2 rounded-lg border px-3 py-2 shadow-sm data-[placeholder]:text-zinc-600">
+      <Select.Trigger className="border-zin-300 flex h-11 w-full items-center justify-between gap-2 rounded-lg border px-3 py-2 shadow-sm outline-none focus:border-violet-300 focus:ring-4 focus:ring-violet-100 data-[placeholder]:text-zinc-600">
         <Select.Value placeholder={placeholder} className="text-black" />
         <Select.Icon>
           <ChevronDown className="h-5 w-5 text-zinc-500" />
