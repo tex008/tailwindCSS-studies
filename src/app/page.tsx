@@ -5,6 +5,7 @@ import * as Input from '@/components/Form/input'
 import FormLabel from '@/components/Form/Label'
 import SelectItem from '@/components/Form/Select/select-item'
 import FormTextArea from '@/components/Form/TextArea'
+import { Button } from '@/components/button'
 import { Bold, Italic, Link, List, ListOrdered, Mail } from 'lucide-react'
 import SettingsTabs from '../components/Form/SettingsTabs'
 
@@ -24,19 +25,12 @@ export default function Home() {
             </span>
           </div>
           <div className="flex items-center gap-2">
-            <button
-              className="rounded-lg border border-zinc-300 px-4 py-2 text-sm font-semibold text-zinc-700 shadow-sm hover:bg-zinc-50"
-              type="button"
-            >
+            <Button variant="outline" type="button">
               Cancel
-            </button>
-            <button
-              className="rounded-lg bg-violet-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-violet-700"
-              type="submit"
-              form="settings"
-            >
+            </Button>
+            <Button variant="primary" type="submit" form="settings">
               Save
-            </button>
+            </Button>
           </div>
         </div>
 
@@ -187,18 +181,12 @@ export default function Home() {
           </div>
 
           <div className="flex items-center justify-end gap-2 pt-5">
-            <button
-              className="rounded-lg border border-zinc-300 px-4 py-2 text-sm font-semibold text-zinc-700 shadow-sm hover:bg-zinc-50"
-              type="button"
-            >
+            <Button variant="outline" type="button">
               Cancel
-            </button>
-            <button
-              className="rounded-lg bg-violet-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-violet-700"
-              type="submit"
-            >
+            </Button>
+            <Button variant="primary" type="submit">
               Save
-            </button>
+            </Button>
           </div>
         </form>
       </div>
