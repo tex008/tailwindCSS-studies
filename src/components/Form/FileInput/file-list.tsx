@@ -1,5 +1,6 @@
 'use client'
 
+import { Button } from '@/components/button'
 import { formatBytes } from '@/utils/format-bytes'
 import { useAutoAnimate } from '@formkit/auto-animate/react'
 import { Trash2, UploadCloud } from 'lucide-react'
@@ -38,12 +39,9 @@ export default function FileList() {
             </div>
           </div>
 
-          <button
-            type="button"
-            className="ml-auto rounded-md p-2 hover:bg-zinc-50"
-          >
+          <Button type="button" variant="ghost">
             <Trash2 className="h-5 w-5 text-zinc-500" />
-          </button>
+          </Button>
         </div>
       ))}
     </div>
