@@ -13,10 +13,10 @@ export default function Profile() {
         src="https://github.com/tex008.png"
       />
       <div className="flex flex-1 flex-col truncate">
-        <span className=" text-sm font-semibold text-zinc-700">
+        <span className=" text-sm font-semibold text-zinc-700 dark:text-zinc-100 ">
           Vinicius Teixeira
         </span>
-        <span className="truncate text-sm text-zinc-500">
+        <span className="truncate text-sm text-zinc-500 dark:text-zinc-400">
           vinicius.teixeira.f@gmail.com
         </span>
       </div>
